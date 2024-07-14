@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    /* espaçamento interno */
+    margin: 0;
+    /* espaçamento externo */
+    box-sizing: border-box;
+    /* distância dos itens */
+}
+
+video, .modelos {
+    width: 100%;
+    /* largura */
+    height: 100%;
+    /* altura */
+    position: absolute;
+    /* POSICIONAR O ITEM NUMA POSIÇÃO EXATA QUE EU DESEJAR */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* - define quem fica na frente de quem - vídeo vá para trás */
+    object-fit: cover;
+    /* COBRIR TODA A TELA */
+    filter: brightness(60%);
+
+}
+
+.logo {
+    filter: brightness(100);
+    position: fixed;
+    /* flutua na página, como fosse pra frente */
+    width: 130px;
+    /* 120px na aula */
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.subtitulo {
+    color: white;
+}
+
+.item {
+    display: flex;
+    /* justify-content: space-between; CRIA UM ESPAÇAMENTO ENTRE OS ITENS */
+    flex-direction: column;  /* DEIXA UM ITEM DEBAIXO DO OUTRO */
+    position: relative;
+    width: 100vw;   /* A TELA TODA - ALTURA*/
+    height: 100vh;  /* A TELA TODA - LARGURA*/
+    scroll-snap-align: start; /* PARA PULAR PARA A PRÓXIMA IMAGEM - COMPLEMENTO DO  scroll-snap-type: y mandatory; */
+}
+
+.info-carro {
+    color: white;
+    
+    margin-top: 80px;
+    text-align: center;
+
+
+}
+
+.rodape {
+    text-align: center; /* ALINHA MEU ITEM AO CENTRO */
+}
+
+html {
+    scroll-snap-type: y mandatory; /*quando rolar a tela, rola para a px imagem, sem ir "aos poucos" */
+}
+
+button {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px; /* ARREDONDA A BORDA DO BOTÃO */
+    border: none; /* TIRA A BORDA DO BOTÃO */
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 300px;
+}
+
+.comprar:hover {
+    background-color: grey;
+}
+
+button:hover{
+    opacity: 90%;
+}
+
+.teste-drive {
+    color: black;
+    background-color: white;
+}
+
+.texto-rodape {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* FORMATA SÓ A FONTE DO MODELO X */
+#modelox {
+    color: black;
+}
