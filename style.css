@@ -139,8 +139,8 @@ button:hover {
 .formulario {
     position: fixed;
     top: 40px;
-    width: 550px;
-    height: 80%;
+    width: 500px;
+    height: 100%;
     z-index: 3;
     left: -50%;
     transition: 1s;
