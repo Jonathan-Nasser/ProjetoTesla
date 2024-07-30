@@ -138,11 +138,11 @@ button:hover {
 
 .formulario {
     position: fixed;
-    top: 40px;
-    width: 500px;
+    top: 25px;
+    width: 600px;
     height: 100%;
     z-index: 3;
     left: -50%;
-    transition: 1s;
+    transition: 1.5s;
 }
 
